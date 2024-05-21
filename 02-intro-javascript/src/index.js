@@ -1,18 +1,17 @@
-//Arreglos en JS
+//Forma 1 de importar modulos:
+//import { heroes } from './data/heroes'
 
-//const arreglo = new Array(100);
-const arreglo = [1,2,3,4];
-// arreglo.push(1);
-// arreglo.push(1);
-// arreglo.push(1);
-// arreglo.push(1);
+import { heroes } from "./data/heroes";
 
-let arreglo2 = [...arreglo, 5];
-//arreglo2.push(5);
+//forma 2 de importar modulos:
+//import { heroes } from "./data/heroes";
 
-const arreglo3 = arreglo2.map((x) => x * 2);
+//forma 3 de importar modulos:
+// aparecen automaticamente los export de otros documentos
 
+const getHeroeById = (id) => {
+    return heroes.find();
 
-console.log(arreglo);
-console.log(arreglo3);
+}
 
+console.log(getHeroeById(2) );
